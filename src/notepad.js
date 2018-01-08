@@ -4,7 +4,7 @@ Notepad = function() {
 }
 
 Notepad.prototype.addNote = function(note) {
-  console.log(self)
-  console.log(self.notes)
-  self.notes.push(note)
+  this.notes.push(note)
+  console.log(this.notes)
+  return(this.notes)
 }
