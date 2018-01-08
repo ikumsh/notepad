@@ -1,4 +1,8 @@
 Notepad = function() {
-  this.notes = []
+  this.notes = new Array
+}
 
+Notepad.prototype.addNote = function(){
+  console.log(this)
+  this.notes.push("hello")
 }
