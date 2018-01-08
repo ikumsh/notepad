@@ -8,8 +8,33 @@
   <!-- Test files -->
   <script src="spec/notepadSpec.js"></script>
   <script src="spec/noteSpec.js"></script>
+  <!-- <script> document.getElementById("#testList").innerHTML = testList.length </script> -->
 </head>
-<center>
 <body>
   <h1 style="font-size:48px;color:purple;font-family:Palatino">VOODOO</h1>
+  <h2 style="font-size:24px;color:purple;font-family:courier">
+    <script> if (resultList.length > 0) {
+      document.write(resultList.length + ' TESTS RAN:')
+      }
+    </script>
+  </h2>
+  <p style="font-size:18px;color:forestgreen;font-family:courier">
+    <script> if (passedtests != 0) {
+      document.write(passedtests + ' PASSES')
+      }
+    </script>
+  </p>
+  <p style="font-size:18px;color:firebrick;font-family:courier">
+    <script> if (failedtests != 0) {
+      document.write(failedtests + ' FAILS')
+      }
+    </script>
+  </p>
+  <p>
+    <script>
+      resultList.forEach(function(el) {
+        document.write('<p style=font-family:courier;font-size:16px;color:' + testPrF(el) + '>' + el + "<br>" + '</p>')
+      })
+    </script>
+  </p>
 </body>
