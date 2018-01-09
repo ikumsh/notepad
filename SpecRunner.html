@@ -21,15 +21,19 @@
     </script>
   </h2>
   <p style="font-size:18px;color:forestgreen;font-family:courier">
-    <script> if (passedtests != 0) {
-      document.write(passedtests + ' PASSES')
-      }
+    <script> if (passedTests === 1) {
+      document.write(passedTests + ' PASS')
+    } else if (passedTests !== 0){
+      document.write(passedTests + ' PASSES')
+    }
     </script>
   </p>
   <p style="font-size:18px;color:firebrick;font-family:courier">
-    <script> if (failedtests != 0) {
-      document.write(failedtests + ' FAILS')
-      }
+    <script> if (failedTests === 1) {
+      document.write(failedtests + ' FAIL')
+    } else if (failedTests !== 0){
+      document.write(failedTests + ' FAILS')
+    }
     </script>
   </p>
   <p>
