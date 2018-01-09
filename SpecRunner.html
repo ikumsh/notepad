@@ -15,19 +15,12 @@
   <h1 style="font-size:48px;color:purple;font-family:Palatino">VOODOO</h1>
   <img src="public/VOODOO.png" class="voodoo_face">
   <h2 style="font-size:24px;color:purple;font-family:courier">
-    <script> if (resultList.length > 0) {
-      document.write(resultList.length + ' TESTS RAN:')
+    <script> if ((passList.length + failList.length) > 0) {
+      document.write('TESTS RAN: ' + (passList.length + failList.length))
       }
     </script>
   </h2>
-  <p style="font-size:18px;color:forestgreen;font-family:courier">
-    <script> if (passedTests === 1) {
-      document.write(passedTests + ' PASS')
-    } else if (passedTests !== 0){
-      document.write(passedTests + ' PASSES')
-    }
-    </script>
-  </p>
+
   <p style="font-size:18px;color:firebrick;font-family:courier">
     <script> if (failedTests === 1) {
       document.write(failedTests + ' FAIL')
@@ -36,13 +29,32 @@
     }
     </script>
   </p>
+
   <p>
     <script>
-      resultList.forEach(function(el) {
+      failList.forEach(function(el) {
         document.write('<p style=font-family:courier;font-size:16px;color:' + testPrF(el) + '>' + el + "<br>" + '</p>')
       })
     </script>
   </p>
+
+  <p style="font-size:18px;color:forestgreen;font-family:courier">
+    <script> if (passedTests === 1) {
+      document.write(passedTests + ' PASS')
+    } else if (passedTests !== 0){
+      document.write(passedTests + ' PASSES')
+    }
+    </script>
+  </p>
+
+  <p>
+    <script>
+      passList.forEach(function(el) {
+        document.write('<p style=font-family:courier;font-size:16px;color:' + testPrF(el) + '>' + el + "<br>" + '</p>')
+      })
+    </script>
+  </p>
+
   <div id="circle00"> </div>
   <div id="circle01"> </div>
   <div id="circle02"> </div>

@@ -1,8 +1,9 @@
-Notepad = function() {
+function Notepad() {
   this.notes = []
+  self = this
 }
 
 Notepad.prototype.addNote = function(note) {
-  this.notes.push(note)
-  return(this.notes)
+  self.notes.push(note)
+  return(self.notes)
 }

@@ -7,11 +7,7 @@ var testList = [
     testPad.notes.length,
     0
     );
-  },
-
-  // function() {
-  //   testError('Throws error', testPad.addNote, testNote)
-  // }
+  }
 ]
 
 voodoo(testList)
