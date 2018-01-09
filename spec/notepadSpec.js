@@ -9,9 +9,9 @@ testEquals(testPad.notes.length,
 }
 
 test02 = function() {
-changedBy(testPad.notes.length,
+assertChangedBy(testPad.notes.length,
 (testPad.addNote(testNote)).length,
-1,
+10,
 "Notes can be added to the notepad")
 }
 

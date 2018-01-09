@@ -1,5 +1,4 @@
 # Notepad
----
 ### Using pure javascript
 - To build a simple notepad single page web app.
 - To build a testing framework from scratch.

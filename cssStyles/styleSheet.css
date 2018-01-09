@@ -1,7 +1,8 @@
 .voodoo_face {
   position: absolute;
   top: 22px;
-  left: 250px
+  left: 250px;
+  z-index: -1;
 }
 
 #circle00 {
