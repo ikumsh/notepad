@@ -1,10 +1,24 @@
-<head>
-  <title>Notepad</title>
-  <!-- Files to be tested -->
-  <script src="src/note.js"></script>
-  <script src="src/notepad.js"></script>
-</head>
-<center>
-<body>
-  <h1 style="font-size:64px;color:blue;font-family:Courier">NOTEPAD</h1>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notepad</title>
+    <!--Source Files -->
+    <script src="src/note.js"></script>
+    <script src="src/interface.js"></script>
+    <script src="src/notepad.js"></script>
+  </head>
+  <center>
+  <body>
+    <h1 style="font-size:64px;color:blue;font-family:Courier">NOTEPAD</h1>
+    <br>
+    <form action="notepad.html" method="post" onSubmit="return false;">
+      <input id="note" type="text" name="note">
+      <input id="Submit" type="submit" value="Submit">
+    </form>
+    <ul>
+      <script>
+        console.log(new Notepad());
+      </script>
+    </ul>
+  </body>
+</html>
