@@ -29,4 +29,4 @@ testEquals(testNote02.shorten(20),
 
 var testList = [test01, test02, test03, test04]
 var resultList = []
-voodoo(testList, resultList)
+voodoo(testList, 0)
