@@ -3,9 +3,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var notepaddisplay = new NotepadDisplay();
 
   document.getElementById('Submit').addEventListener('click', function() {
-    note = new Note(document.getElementById('note').value)
+    var note = new Note(document.getElementById('note').value)
     addNote(note);
-    notepaddisplay.displayNote(note.shorten());
+    console.log(notepad.notes)
+    console.log(document.querySelectorAll('.noteInList').length);
+    var noteID = document.querySelectorAll('.noteInList').length + 1;
+    notepaddisplay.displayNote(note.shorten(), noteID);
     document.getElementById('noteform').reset();
   });
 

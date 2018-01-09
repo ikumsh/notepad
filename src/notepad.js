@@ -4,6 +4,5 @@ function Notepad() {
 }
 
 Notepad.prototype.addNote = function(note) {
-  self.notes.push(note)
-  return(self.notes)
+  self.notes.push(note);
 }

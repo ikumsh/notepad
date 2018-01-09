@@ -1,11 +1,9 @@
 NotepadDisplay = function() {}
 
-// NotepadDisplay.prototype.displayNotelist = function(notelist) {
-//   notelist.forEach(function(el, index) {
-//     document.getElementById('notelist').innerHTML += ('<li>' + (index + 1).toString() + '. ' + el + '</li>')
-//   })
-// }
+NotepadDisplay.prototype.displayNote = function(text, noteID) {
+  document.getElementById('notelist').innerHTML += ('<a class="noteInList" href="#" id="'+noteID+'" onclick="displaySelection(id); return false;"><li>' + text + '</li></a>')
+}
 
-NotepadDisplay.prototype.displayNote = function(text) {
-  document.getElementById('notelist').innerHTML += ('<li>' + text + '</li>')
+function displaySelection(number) {
+  document.getElementById("selection").value = self.notes[number-1].text;
 }
