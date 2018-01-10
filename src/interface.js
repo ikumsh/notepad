@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   var notepad = new Notepad();
-  var notepaddisplay = new NotepadDisplay();
+  var notepadDisplay = new NotepadDisplay();
 
   document.getElementById('Submit').addEventListener('click', function() {
     var note = new Note(document.getElementById('note').value)
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     console.log(notepad.notes)
     console.log(document.querySelectorAll('.noteInList').length);
     var noteID = document.querySelectorAll('.noteInList').length + 1;
-    notepaddisplay.displayNote(note.shorten(), noteID);
+    notepadDisplay.displayNote(note.shorten(), noteID);
     document.getElementById('noteform').reset();
   });
 
