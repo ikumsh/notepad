@@ -7,5 +7,5 @@ NotepadDisplay.prototype.displayNote = function(text, noteID) {
 }
 
 function displaySelection(number) {
-  document.getElementById("selection").value = self.notes[number - 1].text;
+  document.getElementById("selection").value = self.notes[number-1].text;
 }
