@@ -13,8 +13,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   function addNote(note) {
-    if (note !== '') {
-      notepad.addNote(note);
-    };
+    notepad.addNote(note);
   }
 });
