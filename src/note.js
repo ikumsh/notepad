@@ -11,11 +11,3 @@ Note.prototype.shorten = function(n) {
   if(this.text.length > 20) { newtext += '...' }
   return(newtext)
 }
-
-Note.prototype.jsfakey = function() {
-  throw new Error()
-}
-
-Note.prototype.nojsfakey = function() {
-  return (2 + 2) - 1
-}
