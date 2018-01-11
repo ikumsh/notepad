@@ -1,20 +1,24 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   var notepad = new Notepad();
-  var notepaddisplay = new NotepadDisplay();
+  var notepadDisplay = new NotepadDisplay();
 
-  document.getElementById('Submit').addEventListener('click', function() {
-    var note = new Note(document.getElementById('note').value)
+  document.getElementById('create').addEventListener('click', function() {
+    var newNote = document.getElementById('new-note')
+    var note = new Note(newNote.value)
+
     if (note.text !== '') {
-      addNote(note);
       var noteID = document.querySelectorAll('.noteInList').length + 1;
-      notepaddisplay.displayNote(note.shorten(), noteID);
-      document.getElementById('noteform').reset();
+      notepadDisplay.displayNoteList(note.shorten(20), noteID);
+      newNote.value = ''
+      var noteItem = document.getElementById(noteID);
+      noteItem.addEventListener('animationend', function() {
+        noteItem.className = 'noteInList'
+      });
+      addNote(note);
     };
   });
 
   function addNote(note) {
-    if (note !== '') {
-      notepad.addNote(note);
-    };
+    notepad.addNote(note);
   }
 });
