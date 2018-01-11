@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notepad</title>
+    <!--Source Files -->
+    <script src="src/note.js"></script>
+    <script src="src/interface.js"></script>
+    <script src="src/notepad.js"></script>
+    <script src="src/notepadDisplay.js"></script>
+    <script src="src/createNotepad.js"></script>
+    <script src="routes/createNote.js"></script>
+  </head>
+  <body>
+    <h1 style="font-size:64px;color:blue;font-family:Courier">NOTEPAD</h1>
+    <br>
+    <textarea rows="10" id="selection" cols="50"readonly></textarea>
+    <br>
+    <form id="noteform" onSubmit="return false;">
+      <input id="note" type="text" name="note">
+      <input id="Submit" type="submit" value="Submit">
+    </form>
+    <ol id="notelist"></ol>
+  </body>
+</html>
