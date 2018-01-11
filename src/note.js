@@ -1,8 +1,8 @@
 function Note(text) {
-  this.text = text
+  this.text = text;
   if (text === '') {
     alert('You haven\'t entered anything!')
-  }
+  };
 }
 
 Note.prototype.shorten = function(n) {
