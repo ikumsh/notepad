@@ -7,6 +7,8 @@
 // -----------------------------
 
 /project-folder
+  /public
+    voodooStyle.css
   /lib
     voodoo.js
   /spec
