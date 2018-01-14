@@ -27,6 +27,7 @@
 var testList = [
   // Test 1
   function() {
+    //Setup code goes here if needed
     voodooMatcher("Test Description",
     value.toBeTested,
     expectedOutcome
@@ -35,6 +36,7 @@ var testList = [
 
   // Test 2
   function() {
+    //Setup code goes here if needed
     voodooMatcher("Test Description",
     function.toBeTested,
     function.arguments
