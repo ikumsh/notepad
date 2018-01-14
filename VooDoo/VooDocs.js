@@ -9,6 +9,7 @@
 /project-folder
   /public
     voodooStyle.css
+    VooDoo.png
   /lib
     voodoo.js
   /spec
